@@ -10,9 +10,8 @@
       rel="stylesheet"
     />
         <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-
     <link rel="stylesheet" href="index.css" />
-    <title>Meteo App</title>
+    <title>weather-app</title>
   </head>
   <body>
     <div class="weather-app">
@@ -33,14 +32,16 @@
           <div>
             <h1 class="weather-app-city" id="city">Paris</h1>
             <p class="weather-app-details">
-              Tuesday 14:49, scattered clouds
+              <spam id="time"></spam>
+              <span id="description">scattered clouds</span>
               <br />
-              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+              Humidity: <strong id="Humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
             <div class="weather-app-icon">🌤️</div>
-            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-temperature" id="temperature">12</div>
             <div class="weatehr-app-unit">°C</div>
           </div>
         </div>
@@ -48,15 +49,10 @@
 
       <footer>
         This project was coded by
-        <a href="" target="_blank"> Matt Delac</a>,
-        is
-        <a href="" target="_blank"
-          >open-sourced on GitHub</a
-        >
+        <a href="" target="_blank"> Michelle lekoto</a>, is
+        <a href="" target="_blank">open-sourced on GitHub</a>
         and
-        <a href="" target="_blank"
-          >hosted on Netlify</a
-        >
+        <a href="" target="_blank">hosted on Netlify</a>
       </footer>
     </div>
     <script src="index.js"></script>
